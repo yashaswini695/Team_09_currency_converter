@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INR Currency Converter</title>
+  <style>
+    body {
+      background-color: #f5e6ff;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+}
+    .converter-box {
+      background-color: #e4ccf7;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #6d2ea8;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #b47ede;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #9d61c9;
+    }
+
+    #result {
+      margin-top: 15px;
+      color: #4c0070;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  body 
+  {
+    background-image: url('bgimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+</style>
+  </style>
+</head>
+<body>
+  <div class="converter-box">
+    <h2>Convert INR</h2>
+    <input type="number" id="inrAmount" placeholder="Enter INR amount">
+    <select id="currency">
+      <option value="USD">USD (USA)</option>
+      <option value="EUR">EUR (Europe)</option>
+      <option value="MYR">MYR (Malaysia)</option>
+      <option value="GBP">GBP (UK)</option>
+      <option value="JPY">JPY (Japan)</option>
+    </select>
+    <button id="convertBtn">Convert</button>
+      <div style="text-align: center; margin-top: 20px;">
+  <button onclick="goBack()" style="padding: 8px 16px; background-color: #a48dde; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    ← Back
+  </button>
+    <div id="result"></div>
+<script src="converter.js"></script>
+</body>
+</html>
